@@ -1,6 +1,11 @@
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    let mySprite: Sprite = null
-    mySprite.sayText(":)", 500, false)
-})
+let player1: Sprite = null
+tiles.setCurrentTilemap(tilemap`level`)
+scene.cameraFollowSprite(player1)
+controller.moveSprite(player1, controller.dx(), controller.dy())
+player1 = sprites.create(assets.image`Burger`, SpriteKind.Player)
 let heart = sprites.create(assets.image`heart`, SpriteKind.Player)
 heart.setPosition(8, 9)
+heart = sprites.create(assets.image`heart`, SpriteKind.Player)
+heart.setPosition(16, 9)
+heart = sprites.create(assets.image`heart`, SpriteKind.Player)
+heart.setPosition(24, 9)
