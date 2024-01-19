@@ -29,6 +29,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "player"
     },
+    "image7": {
+        "data": "hwQeAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////8AHxEREdHR3d3d3d3d3d3dAB8R0RHR3dHd3d3d3d3d3QDf4e7u7u7u7u7u7u7u7u4A3+FmZmZmZlbVZmZmZmZmAN/tu7u7u9td1d3d3d3d3QAf7fv/z8/bXdXd3d3d3d0A3+H7//z8293d3d3d3d3dAN/t+8///9vd3d3d3d3d3QDf7fv//P/b3d3d3d3d3d0A3+3Lz///293d3d3d3d3dAN/t+/z8/Nvd3d3d3d3d3QDf7fv/z8/b3d3d3d3d3d0A3+37////293d3d3d3d3dAN/t+////9vd3d3d3d3d3QDf7bu7u7vb3d3d3d3d3d0A3+1mZmZmZt1mZtZtZmZmAN/t7u7u7u7u7u7u7u7u7gDfHdEd0d3d3d3d3d3d3d0A390dEd3d3dHd3d3d3d3dAP///////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage0"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
