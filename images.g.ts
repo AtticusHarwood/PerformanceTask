@@ -42,6 +42,41 @@ b555115dddd55d544eede...........
             case "colors":return img`
 3 7 4 a e 
 `;
+            case "image3":
+            case "Burger":return img`
+fffffffffffccccc66666fffffffffff
+ffffffffccc4444444444666ffffffff
+ffffffcc444444444bb4444466ffffff
+fffffcb4444bb4444b5b444444bfffff
+ffffeb4444b5b44444b44444444bffff
+fffebb44444b4444444444b444446fff
+ffeb6bb444444444bb444b5b444446ff
+ffe6bb5b44444444b5b444b44bb44eff
+fe66b4b4444444444b4444444b5b44ef
+fe6bb444444444444444444444bb44ef
+eb66b44444bb444444444444444444be
+eb66bb444b5b44444444bb44444444be
+fb666b444bb444444444b5b4444444bf
+fcb666b44444444444444bb444444bcf
+ffbb6666b44444444444444444444bff
+fefbb66666bb4444444444444444bfef
+f86fcbb66666bbb44444444444bcc688
+8772effcbbbbbbbbbbbbbbbbcfc22778
+87722222cccccccccccccccc22226678
+f866622222222222222222222276686f
+fef866677766667777776667777fffef
+fbff877768f86777777666776fffffbf
+fbeffeefffeff7766688effeeeefeb6f
+f6bfffeffeeeeeeeeeeeeefeeeeebb6e
+f66ddfffffeeeffeffeeeeeffeedb46e
+fc66ddd4effffffeeeeeffff4ddb46ef
+ffc6b4dddddddddddddddddddb444eef
+ffff6bb444444444444444444444eeff
+ffffffbbbb4444444444444444eeffff
+ffffffffebbbbbb44444444eeeffffff
+ffffffffffffffffccccceefffffffff
+ffffffffffffffffffffffffffffffff
+`;
             case "image4":
             case "heart":return img`
 ....................
@@ -65,40 +100,24 @@ b555115dddd55d544eede...........
 ....................
 ....................
 `;
-            case "image3":
-            case "Burger":return img`
-...........ccccc66666...........
-........ccc444444444466.........
-......cc444444444bb4444466......
-.....cb4444bb4444b5b444444b.....
-....eb4444b5b44444b44444444b....
-...ebb44444b4444444444b444446...
-..eb6bb444444444bb444b5b444446..
-..e6bb5b44444444b5b444b44bb44e..
-.e66b4b4444444444b4444444b5b44e.
-.e6bb444444444444444444444bb44e.
-eb66b44444bb444444444444444444be
-eb66bb444b5b44444444bb44444444be
-.b666b444bb444444444b5b4444444b.
-.cb666b44444444444444bb444444bc.
-.fbb6666b44444444444444444444bf.
-.efbb66666bb4444444444444444bfe.
-.86fcbb66666bbb44444444444bcc688
-8772effcbbbbbbbbbbbbbbbbcfc22778
-87722222cccccccccccccccc22226678
-f866622222222222222222222276686.
-.ef866677766667777776667777fffe.
-.bff877768f86777777666776fffffb.
-.beffeefffeff7766688effeeeefeb6.
-.6bfffeffeeeeeeeeeeeeefeeeeebb6e
-.66ddfffffeeeffeffeeeeeffeedb46e
-.c66ddd4effffffeeeeeffff4ddb46e.
-...6b4dddddddddddddddddddb444ee.
-....6bb444444444444444444444ee..
-......bbbb4444444444444444ee....
-........ebbbbbb44444444ee.......
-.................ccccee.........
-................................
+            case "image5":
+            case "myImage":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f . . . . . . 
+. . . . . f e e e e f . . . . . 
+. . . . f e e e e e e f . . . . 
+. . . . f e e e e e e f . . . . 
+. . . . f d e e e e d f . . . . 
+. . . . . f d d d d f . . . . . 
+. . . f f 6 6 6 6 6 6 f f . . . 
+. . f 6 6 6 6 6 6 6 6 6 6 f . . 
+. f 6 6 6 6 6 6 6 6 6 6 6 6 f . 
+. f 6 6 f 6 6 6 6 6 6 f 6 6 f . 
+. . f f . f f f f f f . f f . . 
+. . . . f 8 8 8 8 8 8 f . . . . 
+. . . . f 8 8 f f 8 8 f . . . . 
+. . . f e e e f f e e e f . . . 
+. . . . f f f . . f f f . . . . 
 `;
         }
         return null;
