@@ -100,6 +100,25 @@ ffffffffffffffffffffffffffffffff
 ....................
 ....................
 `;
+            case "image5":
+            case "myImage":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f . . . . . . 
+. . . . . f e e e e f . . . . . 
+. . . . f e e e e e e f . . . . 
+. . . . f e e e e e e f . . . . 
+. . . . f d e e e e d f . . . . 
+. . . . . f d d d d f . . . . . 
+. . . f f 6 6 6 6 6 6 f f . . . 
+. . f 6 6 6 6 6 6 6 6 6 6 f . . 
+. f 6 6 6 6 6 6 6 6 6 6 6 6 f . 
+. f 6 6 f 6 6 6 6 6 6 f 6 6 f . 
+. . f f . f f f f f f . f f . . 
+. . . . f 8 8 8 8 8 8 f . . . . 
+. . . . f 8 8 f f 8 8 f . . . . 
+. . . f e e e f f e e e f . . . 
+. . . . f f f . . f f f . . . . 
+`;
         }
         return null;
     })
