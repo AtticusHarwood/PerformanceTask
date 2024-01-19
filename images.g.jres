@@ -29,6 +29,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Burger"
     },
+    "image7": {
+        "data": "hwQeAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////8AH9ERERHR3d3d3d3d3d39AB/h7u7u7u7u7u7u7u7u/gDf7WZmZmZmVmVmZmZmZvYA3+27u7u7213V3d3d3d39AB/tm5iZmNtd1d3d3d3d/QDf7ZuJmYnbXdXd3d3d3f0A3+GLmZiZ293d3d3d3d39AN/tm5iZmdvd3d3d3d3d/QDf7ZuZmZjb3d3d3d3d3f0A3+2bmZiJ293d3d3d3d39AB/tm5iJmdvd3d3d3d3d/QDf7ZuJmZjb3d3d3d3d3f0A3+2bmZmZ293d3d3d3d39AN/tu7u7u9vd3d3d3d3d/QDf7WZmZmZt1m1mZmZmZvYA3+3u7u7u7u7u7u7u7u7+AN/d3d3d3d3d3d3d3d3d/QD///////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage0"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
