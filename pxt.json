@@ -1,5 +1,5 @@
 {
-    "name": "Image encryption project",
+    "name": "project",
     "description": "",
     "dependencies": {
         "device": "*"
