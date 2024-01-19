@@ -88,6 +88,25 @@ b555115dddd55d544eede...........
 ....fdebbbbbbbedf...
 ....fffffffffffff...
 `;
+            case "image6":
+            case "player":return img`
+. . . . . . f f f f . . . . . . 
+. . . . . f e e e e f . . . . . 
+. . . . f e e e e e e f . . . . 
+. . . . f e e e e e e f . . . . 
+. . . . f d e e e e d f . . . . 
+. . . . . f d d d d f . . . . . 
+. . . . f 6 6 6 6 6 6 f . . . . 
+. . . f 6 6 6 6 6 6 6 6 f . . . 
+. . f 6 6 6 6 6 6 6 6 6 6 f . . 
+. . f 6 6 f 6 6 6 6 f 6 6 f . . 
+. . . f f f e e e e f f f . . . 
+. . . . f 8 8 8 8 8 8 f . . . . 
+. . . . f 8 8 8 8 8 8 f . . . . 
+. . . . f 8 8 f f 8 8 f . . . . 
+. . . f e e e f f e e e f . . . 
+. . . . f f f . . f f f . . . . 
+`;
             case "image3":
             case "Burger":return img`
 ...........ccccc66666...........
