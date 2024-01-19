@@ -19,15 +19,15 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage"
     },
-    "image6": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAADwZg8ADwD/D29m///+8O79ZvaPiP7v7t5mZo6I/u/u3mZmjvgP7+7eZmaO+A/v7t5mZo6I/vDu/Wb2j4j+AP8Pb2b///4AAADwZg8ADwAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "player"
-    },
     "image3": {
         "data": "hwQgACAAAAAAAAAAAO4AAID4AAAAAAAAAAAAAO67y+94h75rxgAAAAAAAO5mZrb7dmf/vmYAAAAAAOBrtmZmuy9i+P9tBgAAAAC+tru7ZrbsYob/3WsAAADAu7tEtGtm+yJ2/t+0AAAAvERbS0S0Zvsidu7fvQsAAExEtERERGbGInf/T00LAMBERERERERrtixn/+9N6wDARERERLRLZLYsh+//TbsAwERLRERbS7S2LPbu/k20AEy0tUREu0S0tiyG7/5NtABMtEtERERERLssZu/+TbQATERERERERES7LHbn/020AExEREREREREuyx35/9NtABMRERERERERLQsd+buTUQARkREu0RERES0LHfm701EAEa7RFtLREREtCx35u9NRAxGW0u0RERERLQsd+juTUQMRrRERERERES0LGfo7k1EDEZEREREtEtEtCxm7v5NRAxgRERLRLS1RLQsZu/+TUQOYES0tUREu0S0LHb//k1EDgBEREtEREREtCx37v9N5AAARkRERERERMQiZ+5PTeQAAEZEtEtERET0Ivfu3ksEAACwRLS1REREy3L37t5EDgAAAEtEu0RERCxi/++9RA4AAABgRERERLQsZv++S+QAAAAAAOZERLT7dob/u2TuAAAAAAAA7rvL73hnvmbmDgAAAAAAAADuAACICADgDgAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Burger"
+    },
+    "image6": {
+        "data": "hwQQABAAAAAA8P8AAAAAAADwuw8AAAAAAPDL+w8AAAAAAL+8/AAAAAAA8Mv8AAAAAADwzNsPAA8A/w9vvf///vDu/Wb2j4j+7+7eZmaOiP7v7t5mZo74D+/u3mZmjvgP7+7eZmaOiP7w7v1m9o+I/gD/D29m///+AAAA8GYPAA8AAAAA/wAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "player"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
