@@ -61,9 +61,9 @@ info.setLife(3)
 forever(function () {
     pause(5000)
     spawn_block = tiles.getTilesByType(assets.tile`myTile10`)
-    sprites.destroyAllSpritesOfKind(SpriteKind.Enemy)
     for (let index = 0; index < 4; index++) {
         enemy_sprite = sprites.create(enemy_images._pickRandom(), SpriteKind.Enemy)
         tiles.placeOnTile(enemy_sprite, spawn_block.removeAt(randint(0, spawn_block.length - 1)))
+        enemy_sprite.follow(player1, 50)
     }
 })
