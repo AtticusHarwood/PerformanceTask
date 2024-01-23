@@ -1,4 +1,3 @@
-let heart: Sprite = null
 let enemy_sprite: Sprite = null
 let spawn_block: tiles.Location[] = []
 tiles.setCurrentTilemap(tilemap`level`)
@@ -67,11 +66,4 @@ forever(function () {
         enemy_sprite = sprites.create(enemy_images._pickRandom(), SpriteKind.Enemy)
         tiles.placeOnTile(enemy_sprite, spawn_block.removeAt(randint(0, spawn_block.length - 1)))
     }
-})
-forever(function () {
-    heart.setPosition(8, 9)
-    heart = sprites.create(assets.image`heart`, SpriteKind.Player)
-    heart.setPosition(24, 9)
-    heart = sprites.create(assets.image`heart`, SpriteKind.Player)
-    heart.setPosition(16, 9)
 })
