@@ -240,9 +240,19 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         if (value.overlapsWith(player1)) {
             enemies.removeAt(enemies.indexOf(value))
             sprites.destroy(value)
+            enemy_spawned += -1
+            kill_count += 1
+            player_name(your_name)
         }
     }
 })
+function player_name (name: string) {
+    pause(2000)
+    your_name = name
+    if (kill_count == 1) {
+        game.showLongText("Achievement:" + name + " Just slayed a monster", DialogLayout.Bottom)
+    }
+}
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     player1.setImage(img`
         . . . . . . . . . . . . . . . . 
@@ -308,9 +318,13 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 let enemy_sprite: Sprite = null
 let spawn_block: tiles.Location[] = []
+let your_name = ""
+let kill_count = 0
 let enemies: Sprite[] = []
 let orientation = ""
 let player1: Sprite = null
+game.showLongText("What is your name:", DialogLayout.Bottom)
+player_name(game.askForString(""))
 tiles.setCurrentTilemap(tilemap`level`)
 let enemy_images = [img`
     . . . . . f f f f f . . . . . . 
@@ -372,6 +386,7 @@ info.setLife(5)
 let enemy_spawned = 0
 orientation = "up"
 enemies = []
+kill_count = 0
 forever(function () {
     if (enemy_spawned < 5) {
         pause(3000)
