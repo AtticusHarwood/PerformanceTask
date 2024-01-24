@@ -236,6 +236,12 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         false
         )
     }
+    for (let value of enemies) {
+        if (value.overlapsWith(player1)) {
+            enemies.removeAt(enemies.indexOf(value))
+            sprites.destroy(value)
+        }
+    }
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     player1.setImage(img`
@@ -302,6 +308,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 let enemy_sprite: Sprite = null
 let spawn_block: tiles.Location[] = []
+let enemies: Sprite[] = []
 let orientation = ""
 let player1: Sprite = null
 tiles.setCurrentTilemap(tilemap`level`)
@@ -361,9 +368,10 @@ player1 = sprites.create(assets.image`player`, SpriteKind.Player)
 tiles.placeOnTile(player1, tiles.getTileLocation(8, 8))
 scene.cameraFollowSprite(player1)
 controller.moveSprite(player1, 100, 100)
-info.setLife(3)
+info.setLife(5)
 let enemy_spawned = 0
 orientation = "up"
+enemies = []
 forever(function () {
     if (enemy_spawned < 5) {
         pause(3000)
@@ -371,6 +379,17 @@ forever(function () {
         enemy_sprite = sprites.create(enemy_images._pickRandom(), SpriteKind.Enemy)
         tiles.placeOnTile(enemy_sprite, spawn_block.removeAt(randint(0, spawn_block.length - 1)))
         enemy_sprite.follow(player1, 30)
+        enemies.push(enemy_sprite)
         enemy_spawned += 1
+    }
+})
+forever(function () {
+    for (let value of enemies) {
+        if (value.overlapsWith(player1)) {
+            pause(2000)
+            if (value.overlapsWith(player1)) {
+                info.changeLifeBy(-1)
+            }
+        }
     }
 })
