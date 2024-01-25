@@ -1,3 +1,10 @@
+function player_name (name: string) {
+    pause(2000)
+    your_name = name
+    if (kill_count == 1) {
+        game.showLongText("Achievement:" + name + " Just slayed a monster", DialogLayout.Bottom)
+    }
+}
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     player1.setImage(assets.image`player`)
     orientation = "up"
@@ -181,56 +188,56 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         animation.runImageAnimation(
         player1,
         [img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . f f f f . . . . . . 
-            . . . . c f e e e e f . . . . . 
-            . . c c . f 8 d e e f . . . . . 
-            . c b b . f d d d e f . . . . . 
-            . c b . . . f d d f . . . . . . 
-            c b . 1 1 . f 6 6 f . . . . . . 
-            . . 1 1 . . f 6 6 f . . . . . . 
-            . . 1 . . f d 6 6 f . . . . . . 
-            . . . . . f d 6 6 6 f . . . . . 
-            . . . . . . f e e e f . . . . . 
-            . . . . . . f 8 8 8 f . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . f e e e f . . . . . . 
-            . . . . . . f f f . . . . . . . 
+            . . . . f f f f . . . . . . . . 
+            . . . f e e e e f . . . . 1 1 . 
+            . . f e e e e e e f . c c . 1 . 
+            . . f e d d d d e f . . . f f 1 
+            . . f d 8 d d 8 d f . . f b b 1 
+            . . . f d d d d f f f f b 1 b 1 
+            . . f 6 6 6 6 6 6 f c b c 1 1 . 
+            . f 6 6 6 6 6 6 6 6 c c b f 1 . 
+            f 6 6 6 6 6 6 6 6 d b c c f 1 c 
+            f 6 6 f 6 6 6 6 f b d f f . c . 
+            . f f f e e e e f f f . . . . . 
+            . . f 8 8 8 8 8 8 f f . . . . . 
+            . . f 8 8 8 8 8 8 f . . . . . . 
+            . . f 8 8 f f 8 8 f . . . . . . 
+            . f e e e f f e e e f . . . . . 
+            . . f f f . f f f f . . . . . . 
             `,img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . f f f f . . . . . . 
-            . . . . . f e e e e f . . . . . 
-            . . . . . f 8 d e e f . . . . . 
-            . . c . . f d d d e f . . . . . 
-            . c c . 1 . f d d f . . . . . . 
-            b c b 1 1 . f 6 6 f . . . . . . 
-            c b . 1 . . f 6 6 f . . . . . . 
-            c . 1 1 . f d 6 6 f . . . . . . 
-            c c 1 . . f d 6 6 6 f . . . . . 
-            . c . . . . f e e e f . . . . . 
-            . . . . . . f 8 8 8 f . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . f e e e f . . . . . . 
-            . . . . . . f f f . . . . . . . 
+            . . . . f f f f . . . . . . . . 
+            . . . f e e e e f . . . . . . . 
+            . . f e e e e e e f . . . . . . 
+            . . f e d d d d e f . . . . . . 
+            . . f d 8 d d 8 d f . . . . . . 
+            . . . f d d d d f f . . . . . . 
+            . . f 6 6 6 6 6 6 f . . . . . . 
+            . f 6 6 6 6 6 6 6 6 . . . . . . 
+            f 6 6 6 6 6 6 6 6 d b . . . . . 
+            f 6 6 f 6 6 6 6 f b d . c . . . 
+            . f f f e c e e f f c c . . . . 
+            . . f 8 8 8 c c 1 1 f . . . . . 
+            . . f 8 8 8 1 1 8 f . . . . . . 
+            . . f 8 8 f f 8 8 f . . . . . . 
+            . f e e e f f e e e f . . . . . 
+            . . f f f . f f f f . . . . . . 
             `,img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . f f f f . . . . . . 
-            . . . . . f e e e e f . . . . . 
-            . . . . . f 8 d e e f . . . . . 
-            . . . . . f d d d e f . . . . . 
-            . . . . . . f d d f . . . . . . 
-            . . . . . . f 6 6 f . . . . . . 
-            . . . . . . f 6 6 f . . . . . . 
-            . . . . . f d 6 6 f . . . . . . 
-            . . . . . f d 6 6 6 f . . . . . 
-            . . . . . . f e e e f . . . . . 
-            . . . . . . f 8 8 8 f . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . f e e e f . . . . . . 
-            . . . . . . f f f . . . . . . . 
+            . . . . f f f f . . . . . . . . 
+            . . . f e e e e f . . . . . . . 
+            . . f e e e e e e f . . . . . . 
+            . . f e d d d d e f . . . f f f 
+            . . f d 8 d d 8 d f . . f b b f 
+            . . . f d d d d f f f f b c b f 
+            . . f 6 6 6 6 6 6 f c b c b f . 
+            . f 6 6 6 6 6 6 6 6 c c b f . . 
+            f 6 6 6 6 6 6 6 6 d b c c f . . 
+            f 6 6 f 6 6 6 6 f b d f f . . . 
+            . f f f e e e e f f f . . . . . 
+            . . f 8 8 8 8 8 8 f f . . . . . 
+            . . f 8 8 8 8 8 8 f . . . . . . 
+            . . f 8 8 f f 8 8 f . . . . . . 
+            . f e e e f f e e e f . . . . . 
+            . . f f f . f f f f . . . . . . 
             `],
         100,
         false
@@ -246,13 +253,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         }
     }
 })
-function player_name (name: string) {
-    pause(2000)
-    your_name = name
-    if (kill_count == 1) {
-        game.showLongText("Achievement:" + name + " Just slayed a monster", DialogLayout.Bottom)
-    }
-}
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     player1.setImage(img`
         . . . . . . . . . . . . . . . . 
@@ -318,6 +318,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 let enemy_sprite: Sprite = null
 let spawn_block: tiles.Location[] = []
+let enemy_spawned = 0
 let your_name = ""
 let kill_count = 0
 let enemies: Sprite[] = []
@@ -383,7 +384,6 @@ tiles.placeOnTile(player1, tiles.getTileLocation(8, 8))
 scene.cameraFollowSprite(player1)
 controller.moveSprite(player1, 100, 100)
 info.setLife(5)
-let enemy_spawned = 0
 orientation = "up"
 enemies = []
 kill_count = 0
@@ -399,10 +399,10 @@ forever(function () {
     }
 })
 forever(function () {
-    for (let value of enemies) {
-        if (value.overlapsWith(player1)) {
+    for (let value2 of enemies) {
+        if (value2.overlapsWith(player1)) {
             pause(2000)
-            if (value.overlapsWith(player1)) {
+            if (value2.overlapsWith(player1)) {
                 info.changeLifeBy(-1)
             }
         }
