@@ -240,18 +240,74 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         if (value.overlapsWith(player1)) {
             music.play(music.melodyPlayable(music.bigCrash), music.PlaybackMode.UntilDone)
             enemies.removeAt(enemies.indexOf(value))
+            player_name(your_name, value)
             sprites.destroy(value)
             enemy_spawned += -1
             kill_count += 1
-            player_name(your_name)
         }
     }
 })
-function player_name (name: string) {
-    pause(2000)
-    your_name = name
+function player_name (name: string, mySprite: Sprite) {
     if (kill_count == 1) {
         game.showLongText("Achievement:" + name + " Just slayed a monster", DialogLayout.Bottom)
+    }
+    if (mySprite.image.equals(img`
+        . . . . . f f f f f . . . . . . 
+        . . . . f 7 7 7 7 f 1 . . . . . 
+        . . . . f 7 7 7 7 f 2 1 . . . . 
+        . . . . f f 1 7 7 f 1 2 . . . . 
+        . . . . f 7 7 7 1 f 2 . . . . . 
+        . . . . . f 7 f 7 7 f . . . . . 
+        . . . f f 8 a a a a 8 f f . . . 
+        . . f 7 7 8 a a a a 8 7 7 f . . 
+        . . f 7 7 8 a a a a 8 7 7 f . . 
+        . . f f f f 8 8 8 8 f f f f . . 
+        . . . . f 8 8 f f 8 8 f . . . . 
+        . . . . f 8 8 f f 8 8 f . . . . 
+        . . . . f 8 8 f f 8 8 f . . . . 
+        . . . . f f f . . f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `)) {
+        game.showLongText("Achievement:" + name + " Just slayed a zombie", DialogLayout.Bottom)
+    } else if (mySprite.image.equals(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . b b b b . . . . . . . . 
+        . . . f 7 7 7 f b b b b . . . . 
+        . b b b f 7 f 7 7 7 7 b b b . . 
+        . b 7 7 7 f 7 7 7 7 7 7 7 b b . 
+        . b 7 f 7 7 7 f 7 7 7 7 7 7 b b 
+        . b 7 7 7 7 7 7 7 7 7 7 7 7 7 b 
+        . b 7 7 7 f f 7 7 b 7 7 7 b 7 b 
+        . b b 7 7 f f 7 7 7 7 7 7 7 7 b 
+        . . b 7 7 7 7 7 7 7 7 7 7 7 7 b 
+        . . . b b b 7 7 7 7 7 b 7 7 b . 
+        . . . . . b b b b b 7 7 7 b b . 
+        . . . . . . . . . b b b b b . . 
+        . . . . . . . . . . . . . . . . 
+        `)) {
+        game.showLongText("Achievement:" + name + " Just slayed a slime", DialogLayout.Bottom)
+    } else if (mySprite.image.equals(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . f b . . . 
+        e d . . . . . . . . f b 3 b . . 
+        . e d e . . . . . . . f b . . . 
+        . . . . d b b b c b c b c b . . 
+        . . . . b b b c b b b b b f b . 
+        . . . . b c b b b b b b b b b f 
+        . . . . . f b . c . f c . c . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `)) {
+        game.showLongText("Achievement:" + name + " Just slayed a rat", DialogLayout.Bottom)
     }
 }
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -319,13 +375,13 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 let enemy_sprite: Sprite = null
 let spawn_block: tiles.Location[] = []
-let your_name = ""
 let kill_count = 0
 let enemies: Sprite[] = []
 let orientation = ""
 let player1: Sprite = null
-game.showLongText("What is your name:", DialogLayout.Bottom)
-player_name(game.askForString(""))
+let your_name = ""
+your_name = game.askForString("WHAT IS YOUR NAME")
+pause(2000)
 tiles.setCurrentTilemap(tilemap`level`)
 let enemy_images = [img`
     . . . . . f f f f f . . . . . . 
