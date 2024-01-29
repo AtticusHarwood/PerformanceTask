@@ -2,6 +2,8 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     player1.setImage(assets.image`player`)
     orientation = "up"
 })
+// TRIGGERING EVENT, USER INPUT FOR ATTACK
+// HAS SEQUENCING, SELECTION, AND ITERATION
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (orientation == "left") {
         animation.runImageAnimation(
@@ -247,6 +249,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         }
     }
 })
+// PROCEDURE
 function player_name (name: string, mySprite: Sprite) {
     if (kill_count == 1) {
         game.showLongText("Achievement:" + name + " Just slayed a monster", DialogLayout.Bottom)
@@ -383,6 +386,7 @@ let your_name = ""
 your_name = game.askForString("WHAT IS YOUR NAME")
 pause(2000)
 tiles.setCurrentTilemap(tilemap`level`)
+// LIST, COLLECTION OF ENEMY SPRITE IMAGES
 let enemy_images = [img`
     . . . . . f f f f f . . . . . . 
     . . . . f 7 7 7 7 f 1 . . . . . 
