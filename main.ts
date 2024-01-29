@@ -11,13 +11,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . . . . f f f f . . . . . . 
             . . . . c f e e e e f . . . . . 
             . . c c . f 8 d e e f . . . . . 
-            . c b b . f d d d e f . . . . . 
-            . c b . . . f d d f . . . . . . 
-            c b . 1 1 . f 6 6 f . . . . . . 
-            . . 1 1 . . f 6 6 f . . . . . . 
-            . . 1 . . f d 6 6 f . . . . . . 
-            . . . . . f d 6 6 6 f . . . . . 
-            . . . . . . f e e e f . . . . . 
+            . c b b c f d d d e f . . . . . 
+            . c b c . c f d d f . . . . . . 
+            c b c 1 1 . f 6 6 f . . . . . . 
+            . c 1 1 . c f 6 6 f . . . . . . 
+            . c 1 . c f d 6 6 f . . . . . . 
+            . . c . . f d 6 6 6 f . . . . . 
+            . . . c . . f e e e f . . . . . 
             . . . . . . f 8 8 8 f . . . . . 
             . . . . . . f 8 8 f . . . . . . 
             . . . . . . f 8 8 f . . . . . . 
@@ -28,13 +28,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . . . . f f f f . . . . . . 
             . . . . . f e e e e f . . . . . 
             . . . . . f 8 d e e f . . . . . 
-            . . c . . f d d d e f . . . . . 
+            . . c . c f d d d e f . . . . . 
             . c c . 1 . f d d f . . . . . . 
             b c b 1 1 . f 6 6 f . . . . . . 
-            c b . 1 . . f 6 6 f . . . . . . 
-            c . 1 1 . f d 6 6 f . . . . . . 
+            c b c 1 . c f 6 6 f . . . . . . 
+            c . 1 1 c f d 6 6 f . . . . . . 
             c c 1 . . f d 6 6 6 f . . . . . 
-            . c . . . . f e e e f . . . . . 
+            . c . c c . f e e e f . . . . . 
             . . . . . . f 8 8 8 f . . . . . 
             . . . . . . f 8 8 f . . . . . . 
             . . . . . . f 8 8 f . . . . . . 
@@ -68,14 +68,14 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . . . . . . . . . . . . . . 
             . . . . . . f f f f . . . . . . 
             . . . . . f e e e e f c . . . . 
-            . . . . . f e e d 8 f . c c . . 
+            . . . . . f e e d 8 f c c c . . 
             . . . . . f e d d d f . b b c . 
             . . . . . . f d d f . c . b c . 
             . . . . . . f 6 6 f c 1 1 . b c 
-            . . . . . . f 6 6 f . c 1 1 . . 
+            . . . . . . f 6 6 f . c 1 1 c . 
             . . . . . . f 6 6 d f . c 1 c . 
             . . . . . f 6 6 6 d f . c . . . 
-            . . . . . f e e e f . . . . . . 
+            . . . . . f e e e f . . . c . . 
             . . . . . f 8 8 8 f . . . . . . 
             . . . . . . f 8 8 f . . . . . . 
             . . . . . . f 8 8 f . . . . . . 
@@ -94,7 +94,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . . . f 6 6 6 d f c . 1 c c 
             . . . . . f e e e f . . c . c . 
             . . . . . f 8 8 8 f . . . c . . 
-            . . . . . . f 8 8 f . . . . . . 
+            . . . . . . f 8 8 f . . . . c . 
             . . . . . . f 8 8 f . . . . . . 
             . . . . . . f e e e f . . . . . 
             . . . . . . . f f f . . . . . . 
@@ -181,56 +181,56 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         animation.runImageAnimation(
         player1,
         [img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . f f f f . . . . . . 
-            . . . . c f e e e e f . . . . . 
-            . . c c . f 8 d e e f . . . . . 
-            . c b b . f d d d e f . . . . . 
-            . c b . c . f d d f . . . . . . 
-            c b c 1 1 . f 6 6 f . . . . . . 
-            . . 1 1 . c f 6 6 f . . . . . . 
-            . c 1 . c f d 6 6 f . . . . . . 
-            . . . c . f d 6 6 6 f . . . . . 
-            . . . . . . f e e e f . . . . . 
-            . . . . . . f 8 8 8 f . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . f e e e f . . . . . . 
-            . . . . . . f f f . . . . . . . 
+            . . . . f f f f . . . . . . . . 
+            . . . f e e e e f . . . . . . . 
+            . . f e e e e e e f . 1 1 . c . 
+            . . f e d d d d e f . . . f f c 
+            . . f d 8 d d 8 d f . 1 f b b f 
+            . . . f d d d d f . f 1 1 c b f 
+            . . f 6 6 6 6 6 6 f c b 1 b c . 
+            . f 6 6 6 6 6 6 6 6 c c b f c . 
+            f 6 6 6 6 6 6 6 6 d b c c f c . 
+            f 6 6 f 6 6 6 6 f b d f c . . . 
+            . f f f e e e e f f f . c . . . 
+            . . f 8 8 8 8 8 8 f . . . . . . 
+            . . f 8 8 8 8 8 8 f . . . . . . 
+            . . f 8 8 f f 8 8 f . . . . . . 
+            . f e e e f f e e e f . . . . . 
+            . . f f f . f f f f . . . . . . 
             `,img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . f f f f . . . . . . 
-            . . . . . f e e e e f . . . . . 
-            . . . . . f 8 d e e f . . . . . 
-            . . c c . f d d d e f . . . . . 
-            . c c c 1 . f d d f . . . . . . 
-            b c b 1 1 c f 6 6 f . . . . . . 
-            c b . 1 . . f 6 6 f . . . . . . 
-            c . 1 1 c f d 6 6 f . . . . . . 
-            c c 1 . . f d 6 6 6 f . . . . . 
-            . c . c c . f e e e f . . . . . 
-            . . c . . . f 8 8 8 f . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . f e e e f . . . . . . 
-            . . . . . . f f f . . . . . . . 
+            . . . . f f f f . . . . . . . . 
+            . . . f e e e e f . . . . . . . 
+            . . f e e e e e e f . . . . . . 
+            . . f e d d d d e f . . . . . . 
+            . . f d 8 d d 8 d f . . . . . . 
+            . . . f d d d d f . . . . . . . 
+            . . f 6 6 6 6 6 6 f . . . . . . 
+            . f 6 6 6 6 6 6 6 6 f . . . . . 
+            f 6 6 6 6 6 6 6 6 d b . . . . . 
+            f 6 6 1 6 6 6 b f b d . . . . . 
+            . f f f 1 1 e e b f f 1 . . . . 
+            . . f 8 8 c 8 8 1 1 1 . . . . . 
+            . . f 8 8 8 c c 8 f . . . . . . 
+            . . f 8 8 f f 8 8 f . . . . . . 
+            . f e e e f f e e e f . . . . . 
+            . . f f f . f f f f . . . . . . 
             `,img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . f f f f . . . . . . 
-            . . . . . f e e e e f . . . . . 
-            . . . . . f 8 d e e f . . . . . 
-            . . . . . f d d d e f . . . . . 
-            . . . . . . f d d f . . . . . . 
-            . . . . . . f 6 6 f . . . . . . 
-            . . . . . . f 6 6 f . . . . . . 
-            . . . . . f d 6 6 f . . . . . . 
-            . . . . . f d 6 6 6 f . . . . . 
-            . . . . . . f e e e f . . . . . 
-            . . . . . . f 8 8 8 f . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . . f 8 8 f . . . . . . 
-            . . . . . f e e e f . . . . . . 
-            . . . . . . f f f . . . . . . . 
+            . . . . f f f f . . . . . . . . 
+            . . . f e e e e f . . . . . . . 
+            . . f e e e e e e f . . . . . . 
+            . . f e d d d d e f . . . f f f 
+            . . f d 8 d d 8 d f . . f b b f 
+            . . . f d d d d f . f f b c b f 
+            . . f 6 6 6 6 6 6 f c b c b f . 
+            . f 6 6 6 6 6 6 6 6 c c b f . . 
+            f 6 6 6 6 6 6 6 6 d b c c f . . 
+            f 6 6 f 6 6 6 6 f b d f f . . . 
+            . f f f e e e e f f f . . . . . 
+            . . f 8 8 8 8 8 8 f . . . . . . 
+            . . f 8 8 8 8 8 8 f . . . . . . 
+            . . f 8 8 f f 8 8 f . . . . . . 
+            . f e e e f f e e e f . . . . . 
+            . . f f f . f f f f . . . . . . 
             `],
         100,
         false
@@ -238,6 +238,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
     for (let value of enemies) {
         if (value.overlapsWith(player1)) {
+            music.play(music.melodyPlayable(music.bigCrash), music.PlaybackMode.UntilDone)
             enemies.removeAt(enemies.indexOf(value))
             sprites.destroy(value)
             enemy_spawned += -1
